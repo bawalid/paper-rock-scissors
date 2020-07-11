@@ -22,10 +22,11 @@ body {
 .game {
     padding: 30px;
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto;
     height: 100vh;
     gap: 10%;
     justify-content: center;
+    
 }
 
 
@@ -303,10 +304,12 @@ body {
 }
 
 @media screen and (min-width:1366px) {
+  
     .game {
         justify-items: center;
-        grid-template-rows: auto 1fr auto;
-        gap: 0;
+        grid-template-rows: auto;
+        align-content: space-between;
+        gap: 5%;
     }
 
     .scorePanel {
@@ -328,7 +331,7 @@ body {
     }
 
     .gameButtons>div.gBtn {
-        margin: 10px 50px;
+        margin: 0 50px;
     }
 
     .gameButtons>div.selected {
@@ -351,8 +354,8 @@ body {
     .scissors,
     .rock,
     .computer {
-        width: 300px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 
     .paperIn,
